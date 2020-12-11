@@ -34,7 +34,7 @@ export default function AccountBal() {
 
   return (
     <div>
-      <Typography variant="h3">Welcome back, Name</Typography>
+      <Typography variant="h5" style={{color:'red'}}>Welcome back, Name</Typography>
       <br />
       <Typography variant="subtitle">Your account balance: </Typography>
       <Link onClick={() => handleSignUp()}> click here</Link>

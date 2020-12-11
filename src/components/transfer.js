@@ -10,7 +10,7 @@ const ENDPOINT = "https://us-central1-sandbox-d017b.cloudfunctions.net/api"
 
 const useStyles = makeStyles((theme) =>
   createStyles({
-    
+
   }),
 );
 

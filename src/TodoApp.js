@@ -7,7 +7,36 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
 import useTodoState from "./hooks/useTodoState";
 
+
 function TodoApp() {
+  var myHeaders = new Headers();
+  myHeaders.append("x-api-key", "Ps1TGitUkS8fV6jlp3ASuab0y4CS6mr59ngEoAU6");
+  myHeaders.append("Content-Type", "text/plain");
+  myHeaders.append("Origin", "http://localhost:3003");
+
+  var raw = '{"custID":"14"}';
+
+  var requestOptions = {
+    mode: "cors",
+    method: "POST",
+    headers: myHeaders,
+    body: raw,
+    redirect: "follow",
+  };
+
+  var data;
+  fetch(
+    "https://cors-anywhere.herokuapp.com/https://u8fpqfk2d4.execute-api.ap-southeast-1.amazonaws.com/techtrek2020/transaction/view",
+    requestOptions
+  )
+    .then((response) => response.json())
+    .then((result) => (data = result))
+    .then(() => console.log("data", data))
+    .then(window.localStorage.setItem("todos", data))
+    .catch((error) => console.log("error", error));
+
+  
+  
   const initialTodos = [
     {
         "eGift": false,

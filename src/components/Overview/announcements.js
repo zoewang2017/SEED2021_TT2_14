@@ -19,7 +19,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const tutorialSteps = [
   {
     label: "Forget your wallet?",
-    imgPath:"./banner1.jpg",
+    imgPath:"../../public/banner1.png",
   },
   {
     label: "Bird",

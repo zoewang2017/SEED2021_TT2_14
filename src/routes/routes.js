@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Overview from "../views/dashboard";
 import Login from "../Login.js";
+import Transfer from "../components/transfer"
 
 export default function Routes() {
   return (
@@ -12,7 +13,7 @@ export default function Routes() {
         <Route exact path="/login" component={Login} />
         {/* <Route exact path="/transaction" component={Tansaction} />
         <Route exact path="/Transfer" component={Transfer} /> */}
-
+        <Route exact path="/transfer" component={Transfer} />
         <Redirect push to="/login" />
       </Switch>
     </BrowserRouter>

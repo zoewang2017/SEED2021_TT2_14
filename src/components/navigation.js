@@ -7,7 +7,6 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import CallMissedOutgoingIcon from "@material-ui/icons/CallMissedOutgoing";
 import HistoryIcon from "@material-ui/icons/History";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import { NavLink } from "react-router-dom";
 
 export const mainListItems = (
   <div>

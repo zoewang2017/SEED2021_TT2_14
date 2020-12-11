@@ -10,9 +10,10 @@ export default function Routes() {
       <Switch>
         <Route exact path="/overview" component={Overview} />
         <Route exact path="/login" component={Login} />
+        {/* <Route exact path="/transaction" component={Tansaction} />
+        <Route exact path="/Transfer" component={Transfer} /> */}
 
-
-        <Redirect push to="/overview" />
+        <Redirect push to="/login" />
       </Switch>
     </BrowserRouter>
   );

@@ -6,28 +6,29 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import CallMissedOutgoingIcon from "@material-ui/icons/CallMissedOutgoing";
 import HistoryIcon from "@material-ui/icons/History";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import { NavLink } from "react-router-dom";
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem button component={NavLink} to="/dashboard">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Overview" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={NavLink} to="/Home">
       <ListItemIcon>
         <CallMissedOutgoingIcon />
       </ListItemIcon>
       <ListItemText primary="Transfer" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={NavLink} to="/Home">
       <ListItemIcon>
         <HistoryIcon />
       </ListItemIcon>
       <ListItemText primary="Transaction History" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={NavLink} to="/Home">
       <ListItemIcon>
         <AccountCircleIcon />
       </ListItemIcon>
